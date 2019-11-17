@@ -2,7 +2,6 @@
 
 * Студент: [Юля Корнейчук](https://up.htmlacademy.ru/adaptive/18/user/1051899).
 * Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
-
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
