@@ -35,46 +35,55 @@
     <section class="contest">
       <h1 class="contest__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <p class="contest__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <fieldset class="contest__name-form">
-          <legend></legend>
+
+      <form class="contest__form">
+      <fieldset class="contest__name">
+          <legend class="visually-hidden">ФИО</legend>
           <label>Фамилия:<input type="text" required placeholder="Укажите фамилию *"></label>
           <label>Имя:<input type="text" required placeholder="Введите ваше имя *"></label>
           <label>Отчество:<input type="text" required placeholder="Ну, и отчество тоже"></label>
-         </fieldset>
+      </fieldset>
 
-         <form class="contest__goals-form" method="post">
-            <p><b>Ваши безбашенные достижения в путешествии</b></p>
-            <p>
-            <input type="checkbox" name="option1" value="a1">Сделал селфи с акулой<Br>
-            <input type="checkbox" name="option2" value="a2">Обгорел на пляже<Br>
-            <input type="checkbox" name="option3" value="a3">Видел Чака Норриса<Br>
-            <input type="checkbox" name="option4" value="a4">Накупил сувениров<Br>
-            <input type="checkbox" name="option5" value="a5">Удержал башню<Br>
-            <input type="checkbox" name="option6" value="a6">Разгромил отель</p>
-         </form>
+      <fieldset class="contest__goals">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+            <input type="checkbox" name="option1" value="a1">
+              <label>Сделал селфи с акулой</label>
+            <input type="checkbox" name="option2" value="a2">
+              <label>Обгорел на пляже</label>
+            <input type="checkbox" name="option3" value="a3">
+              <label>Видел Чака Норриса</label>
+            <input type="checkbox" name="option4" value="a4">
+              <label>Накупил сувениров</label>
+            <input type="checkbox" name="option5" value="a5">
+              <label>Удержал башню</label>
+            <input type="checkbox" name="option6" value="a6">
+              <label>Разгромил отель</label>
+      </fieldset>
 
-            <fieldset class="contest__contacts-form">
-                <legend></legend>
-                <label>Номер телефона<input type="text" required placeholder="Номер, пожалуйста"></label>
-                <label>Адрес почты<input type="text" required placeholder="Введите почту *"></label>
-            </fieldset>
+      <fieldset class="contest__contacts">
+          <legend class="visually-hidden">Контакты</legend>
+            <label>Номер телефона<input type="text" required placeholder="Номер, пожалуйста"></label>
+            <label>Адрес почты<input type="text" required placeholder="Введите почту *"></label>
+      </fieldset>
 
-            <form class="contest__app-form" method="post">
-                <p><b>С каким приложением путешествовали?</b></p>
-                <p>
-                <input type="checkbox" name="option1" value="a1">Pink для iOS<Br>
-                <input type="checkbox" name="option2" value="a2">Pink на Android<Br>
-                <input type="checkbox" name="option3" value="a3">Windows Phone</p>
-             </form>
+      <fieldset class="contest__app">
+        <legend>С каким приложением путешествовали?</legend>
+        <ul class="contest__app-list">
+          <li><input type="radio" name="option" value="a1">Pink для iOS</li>
+          <li><input type="radio" name="option" value="a2">Pink на Android</li>
+          <li><input type="radio" name="option" value="a3">Windows Phone</li>
+        </ul>
+      </fieldset>
 
-             <fieldset class="contest__emotions-form">
-                <legend></legend>
-                <label><input type="text" required placeholder="Можно прям в красках, не стесняясь в выражениях"></label>
-            </fieldset>
+      <fieldset class="contest__emotions">
+        <legend class="visually-hidden">Опишите свои эмоции</legend>
+          <label><input type="text" required placeholder="Можно прям в красках, не стесняясь в выражениях"></label>
+      </fieldset>
 
-            <button class="contest__button" type="submit">Отправить форму</button>
+      <button class="contest__button" type="submit">Отправить форму</button>
 
-            <span class="contest_warning">* — обязательные поля</span>
+       <span class="contest_warning">* — обязательные поля</span>
+      </form>
     </section>
 
   </main>
