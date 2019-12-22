@@ -14,9 +14,9 @@
         <a class="page-header__logo">
             <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Фотоприложение «Пинк»">
         </a>
-        <button class="main-nav__toggle" type="button" disabled><img class="" src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-                <ul class="main-nav__list site-list">
+        <button class="page-header__toggle" type="button" disabled><img class="" src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+                <ul class="page-header__list site-list">
                     <li class="site-list__item site-list__item--active">
                         <a>Главная</a>
                     </li>
@@ -36,7 +36,7 @@
 
     <script>
       var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      var navToggle = document.querySelector('.page-header__toggle');
 
       navMain.classList.remove('main-nav--nojs');
       navToggle.removeAttribute('disabled')
