@@ -9,33 +9,36 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/75x25" width="75" height="22" alt="Фотоприложение «Пинк»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+    <div class="container">
+      <div class="page-header__top">
+        <a class="page-header__logo" href="">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Фотоприложение «Пинк»">
+        </a>
+        <button class="page-header__toggle" type="button" disabled><img class="" src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
       </div>
-    </nav>
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+              <ul class="page-header__list site-list">
+                  <li class="site-list__item site-list__item--active">
+                      <a>Главная</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="form.html">Конкурс</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                  </li>
+              </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
+    <div class="container">
     <section class="contest">
       <h1 class="contest__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="contest__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <p class="contest__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
       <form class="contest__form">
       <fieldset class="contest__name">
@@ -45,8 +48,10 @@
           <label>Отчество:<input type="text" required placeholder="Ну, и отчество тоже"></label>
       </fieldset>
 
+
       <fieldset class="contest__goals">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
+        <p class="contest__paragraph">Ваши безбашенные достижения в путешествии</p>
+          <legend class="visually-hidden">Достижения</legend>
             <input type="checkbox" name="option1" value="a1">
               <label>Сделал селфи с акулой</label>
             <input type="checkbox" name="option2" value="a2">
@@ -68,7 +73,8 @@
       </fieldset>
 
       <fieldset class="contest__app">
-        <legend>С каким приложением путешествовали?</legend>
+        <p class="contest__paragraph">С каким приложением путешествовали?</p>
+        <legend class="visually-hidden"></legend>
         <ul class="contest__app-list">
           <li><input type="radio" name="option" value="a1">Pink для iOS</li>
           <li><input type="radio" name="option" value="a2">Pink на Android</li>
@@ -77,7 +83,8 @@
       </fieldset>
 
       <fieldset class="contest__emotions">
-        <legend class="visually-hidden">Опишите свои эмоции</legend>
+        <p class="contest__paragraph">Опишите свои эмоции</p>
+        <legend class="visually-hidden">Эмоции</legend>
           <label><input type="text" required placeholder="Можно прям в красках, не стесняясь в выражениях"></label>
       </fieldset>
 
@@ -86,9 +93,11 @@
       <span class="contest_warning">* — обязательные поля</span>
       </form>
     </section>
-
+</div>
   </main>
+
   <footer class="page-footer">
+    <div class="container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html" aria-label="Перейти на главную страницу">
         <img class="page-header__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Фотоприложение «Пинк»">
@@ -102,6 +111,7 @@
         <span class="page-footer__element">Разработано</span>
         <img class="page-header__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Фотоприложение «Пинк»">
       </a>
+    </div>
     </div>
   </footer>
 </body>

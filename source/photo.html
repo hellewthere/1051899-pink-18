@@ -8,31 +8,34 @@
 </head>
 
 <body>
-    <header class="page-header">
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
         <a class="page-header__logo" href="">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/75x25" width="75" height="22" alt="Фотоприложение «Пинк»">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Фотоприложение «Пинк»">
         </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a>Фотографии</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Конкурс</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        <button class="page-header__toggle" type="button" disabled><img class="" src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
+      </div>
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+              <ul class="page-header__list site-list">
+                  <li class="site-list__item site-list__item--active">
+                      <a>Главная</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="form.html">Конкурс</a>
+                  </li>
+                  <li class="site-list__item site-list__item--active">
+                      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                  </li>
+              </ul>
+      </nav>
+    </div>
+  </header>
     <main class="page-main">
+      <div class="container">
         <h1 class="visually-hidden">Пользователи фотоприложения «Пинк»</h1>
         <section class="photos">
             <header class="photos__header">
@@ -128,11 +131,13 @@
                 <button class="demo__button" type="reset">Отмена</button>
             </form>
         </section>
+        </div>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <a class="page-footer__logo" href="index.html" aria-label="Перейти на главную страницу">
-                <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Фотоприложение «Пинк»">
+      <div class="container">
+
+            <a class="page-footer__logo" href="index.html" alt="Перейти на главную страницу">
+                <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Фотоприложение «Пинк»">
             </a>
             <ul class="page-footer__social">
                 <li class="page-footer__social page-footer__social--twitter"></li>
@@ -141,8 +146,9 @@
             </ul>
             <a class="page-footer__icon" href="">
                 <span class="page-footer__element">Разработано</span>
-                <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Фотоприложение «Пинк»">
+                <img class="page-footer__logo-image" src="https://via.placeholder.com/147x40" width="146" height="40" alt="Фотоприложение «Пинк»">
             </a>
+        </div>
         </div>
     </footer>
 </body>
