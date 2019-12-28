@@ -1,8 +1,15 @@
 .page-header {
-  background-color: @bg-darkgrey;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.page-header__top {
+
+height: 66px;
+display: block;
+opacity: 0,3;
 }
 
 .page-header__logo {
@@ -11,7 +18,8 @@
 
 .page-header__logo-image {
   height: 22px;
-
+  margin-left: 20px;
+  margin-right: 150px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -89,9 +97,12 @@
   margin: 0 auto;
   background-color: @bg-darkgrey;
   text-align: center;
+
+  box-shadow: 0px 1px 0 0 #000000;
 }
 
 .page-header__list {
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -105,6 +116,7 @@
   }
 
   .site-list {
+
     width: 570px;
 
   }
@@ -167,7 +179,6 @@
   .page-header__nav--nojs .site-list__item--active a {
     padding-right: 21px;
     padding-left: 21px;
-    text-align: left;
   }
 
   .page-header__nav--nojs .user-list__item {
