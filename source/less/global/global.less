@@ -1,40 +1,52 @@
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-  width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-family: OpenSans, Arial, sans-serif;
-  background-color: @bg-darkgrey;
-  color: #ffffff;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans", "Arial", sans-serif;
+	background-color: @darkgrey;
+	color: @white;
 }
 
 img {
-  height: auto;
+	height: auto;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 ul {
-  padding: 0;
-  list-style: none;
+	padding: 0;
+	list-style: none;
+}
+
+blockquote {
+	margin: 0;
+}
+
+p {
+	margin: 0;
 }
 
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   clip: rect(0 0 0 0);
-  width: 1px;
+  clip-path: inset(50%);
+	width: 1px;
   height: 1px;
+  overflow: hidden;
   margin: -1px;
+  border: 0;
+  padding: 0;
 }

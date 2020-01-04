@@ -1,31 +1,24 @@
 .site-list {
-  font-weight: bold;
+	height: 252px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: @darkgrey;
 }
 
 .site-list a {
-  display: block;
-  padding: 12px 21px;
-  padding-bottom: 13px;
-
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: @bg-darkgrey;
-  box-shadow: @shadow;
-  border-bottom: @shadow;
+	color: @white;
 }
 
-.site-list a[href] {
-  &:hover {
-    background-color: @bg-darkgrey;
+.site-list__item {
+	padding-top: 27px;
+}
 
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-
-  }
+.site-list a {
+	&:hover {
+		color: @red;
+	}
+	&:active {
+	}
 }
