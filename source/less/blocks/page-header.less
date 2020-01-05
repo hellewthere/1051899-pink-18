@@ -1,13 +1,52 @@
 .page-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  background: @darkgrey url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
+  background-size: 100%;
+  background-position: top -6px center;
+}
+
+.page-header__slogan {
+	display: block;
+	width: 221px;
+	padding-top: 29px;
+	margin-left: 50px;
+	margin-right: 49px;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.app__img {
+	padding-top: 33px;
 }
 
 .page-header__top {
-	padding-right: 20px;
-	padding-left: 20px;
-	opacity: 0.3;
+
+	  display: flex;
+    max-width: 940px;
+    padding: 22px 20px 21px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-header__wrapper {
+
+}
+
+.page-header--index .page-header__wrapper::after {
+  content: "";
+    position: absolute;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 258px;
+    height: 286px;
+    z-index: 10;
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat top center;
+    background-size: cover;
+    transform: translate(-12%);
 }
 
 .page-header__logo {
@@ -15,12 +54,11 @@
 }
 
 .page-header__logo-image {
-	margin-top: 22px;
+
 }
 
 .page-header__toggle {
-	padding: 0;
-	margin-top: 24px;
+
 }
 
 /*
