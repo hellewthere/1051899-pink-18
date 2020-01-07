@@ -18,7 +18,6 @@
 }
 
 .page-header__top {
-
 	  display: flex;
     max-width: 940px;
     padding: 22px 20px 21px;
@@ -28,7 +27,11 @@
 }
 
 .page-header__wrapper {
-
+  background: @darkgrey url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
+  background-size: 100%;
+  background-position: top -6px center;
+  padding-top: 150px;
+  margin-top: -150px;
 }
 
 .page-header__slogan::after {
@@ -36,14 +39,12 @@
     position: absolute;
     margin: auto;
     top: auto;
-    bottom: 0;
+    bottom: 18px;
     left: 0;
     right: 0;
-    width: 258px;
+    width: 100%;
     height: 286px;
-    z-index: 10;
     background: url(../img/iphone-hand-mobile@1x.png) no-repeat top center;
-    background-size: cover;
     transform: translate(-12%);
 }
 
@@ -54,6 +55,15 @@
 .page-header__logo-image {
 
 }
+
+.page-header__logo-image:hover {
+  fill: @red;
+  }
+
+  .page-header__logo-image:active {
+    fill: @white;
+    opacity: 30%;
+    }
 
 .page-header__toggle {
 

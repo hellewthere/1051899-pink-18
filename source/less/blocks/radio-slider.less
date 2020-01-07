@@ -1,0 +1,57 @@
+.radio-slider {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.radio-slider__point {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio-slider__point + label {
+	position: relative;
+	padding: 0 0 0 19px;
+	cursor: pointer;
+}
+
+.radio-slider__point + label:before {
+	content: '';
+	position: absolute;
+	top: 42px;
+  left: 132px;
+  right: 132px;
+	width: 6px;
+	height: 6px;
+  background: @darkgrey;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.radio-slider__point + label:after {
+	content: '';
+	position: absolute;
+	top: 42px;
+  left: 132px;
+  right: 132px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+  background: @darkgrey;
+  opacity: 0.3;
+	border-radius: 50%;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	transition: .2s;
+}
+
+.radio-slider__point:checked + label:after {
+	border: solid 3px @darkgrey;
+}
+
+.radio-slider__point:focus + label:before {
+
+  background: @darkgrey;
+  opacity: 0.6;
+}
