@@ -1,5 +1,12 @@
 .page-header {
+}
 
+.page-header__wrapper {
+  background: url(img/bg-back-mobile@1x.jpg) no-repeat center top;
+  background-size: 100%;
+  background-position: top -6px center;
+  padding-top: 150px;
+  margin-top: -150px;
 }
 
 .page-header__slogan {
@@ -13,8 +20,18 @@
 	text-align: center;
 }
 
-.app__img {
-	padding-top: 33px;
+.page-header__slogan::after {
+	content: "";
+	position: absolute;
+	margin: auto;
+	top: auto;
+	bottom: 18px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 286px;
+	background: url(../img/iphone-hand-mobile@1x.png) no-repeat top center;
+	transform: translate(-12%);
 }
 
 .page-header__top {
@@ -24,14 +41,6 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.page-header__wrapper {
-  background: @darkgrey url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
-  background-size: 100%;
-  background-position: top -6px center;
-  padding-top: 150px;
-  margin-top: -150px;
 }
 
 .page-header__logo {
