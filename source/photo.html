@@ -11,30 +11,14 @@
 
 <body>
     <header class="page-header">
-        <div class="container">
-            <div class="page-header__top">
-                <a class="page-header__logo" href="index.html">
-                    <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Фотоприложение «Пинк»">
-                </a>
-                <button class="page-header__toggle" type="button" disabled><img class="" src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
+            <div class="container">
+                    <div class="page-header__top">
+                        <a class="page-header__logo">
+                            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Фотоприложение «Пинк»">
+                        </a>
+                        <button class="page-header__toggle" type="button"><img src="img/icon-menu-burger.svg" width="50" height="24" alt="Главное меню"></button>
+                    </div>
             </div>
-            <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-                <ul class="page-header__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a>Главная</a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="photo.html">Фотографии</a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="form.html">Конкурс</a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </header>
     <main class="page-main">
         <div class="container">
@@ -56,63 +40,94 @@
                     <li class="photos__item">
 
                         <blockquote class="photos__text">
-                            <cite>Анна (5 минут назад)</cite>
+                            <cite><span class="photos__text-name">Анна</span> <span class="photos__text-time">(5 минут назад)</span></cite>
                             <p class="photos__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                         </blockquote>
+                        <div class="photos_likes">
+                        <span class="photos__like">
+                            <img src="img/icon-heart.svg" alt="Like">
+                        </span>
                         <span class="photos__element">Нравится: 215</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
                         <blockquote class="photos__text">
-                            <cite>Левон (5 часов назад)</cite>
+                            <cite><span class="photos__text-name">Левон</span> <span class="photos__text-time">(5 часов назад)</span></cite>
                             <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                         </blockquote>
+                        <div class="photos_likes">
+                            <span class="photos__like">
+                                <img src="img/icon-heart.svg" alt="Like">
+                            </span>
                         <span class="photos__element">Нравится: 356</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
                         <blockquote class="photos__text">
-                            <cite>Антон (12 часов назад)</cite>
+                            <cite><span class="photos__text-name">Антон</span> <span class="photos__text-time">(12 часов назад)</span></cite>
                             <p class="photos__comment">Соседи будут рады!</p>
                         </blockquote>
+                        <div class="photos_likes">
+                            <span class="photos__like">
+                                <img src="img/icon-heart.svg" alt="Like">
+                            </span>
                         <span class="photos__element">Нравится: 666</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
                         <blockquote class="photos__text">
-                            <cite>Борис (20 часов назад)</cite>
+                            <cite><span class="photos__text-name">Борис</span> <span class="photos__text-time">(20 часов назад)</span></cite>
                             <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                         </blockquote>
+                        <div class="photos_likes">
+                            <span class="photos__like">
+                                <img src="img/icon-heart.svg" alt="Like">
+                            </span>
                         <span class="photos__element">Нравится: 215</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергей">
                         <blockquote class="photos__text">
-                            <cite>Сергей (25 часов назад)</cite>
+                            <cite><span class="photos__text-name">Сергей</span> <span class="photos__text-time">(25 часов назад)</span></cite>
                             <p class="photos__comment">Самая кубанская в мире!</p>
                         </blockquote>
+                        <div class="photos_likes">
+                            <span class="photos__like">
+                                <img src="img/icon-heart.svg" alt="Like">
+                            </span>
                         <span class="photos__element">Нравится: 4</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
                         <blockquote class="photos__text">
-                            <cite>Максим (40 часов назад)</cite>
+                            <cite><span class="photos__text-name">Максим</span><span class="photos__text-time">(40 часов назад)</span></cite>
                             <p class="photos__comment">Где снег-то?</p>
                         </blockquote>
-
+                        <div class="photos_likes">
+                            <span class="photos__like">
+                                <img src="img/icon-heart.svg" alt="Like">
+                            </span>
                         <span class="photos__element">Нравится: 150</span>
+                        </div>
                     </li>
                     <li class="photos__item">
                         <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
                         <blockquote class="photos__text">
-                            <cite>Надежда (45 часов назад)</cite>
+                            <cite><span class="photos__text-name">Надежда</span> <span class="photos__text-time">(45 часов назад)</span></cite>
                             <p class="photos__comment">Всем GM и взаимные лайки!</p>
                         </blockquote>
                         <div class="photos__like">
-                            <img class="photos__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
-
+                            <div class="photos_likes">
+                                <span class="photos__like">
+                                    <img src="img/icon-heart.svg" alt="Like">
+                                </span>
                             <span class="photos__element">Нравится: 2560</span>
-
+</div>
                         </div>
                     </li>
                 </ul>
@@ -126,7 +141,7 @@
 
             <section class="demo">
                 <form class="demo__form">
-                    <a class="demo__img" href=""><img class="app__img" src="img/photo-road-mobile@1x.jpg" width="280" height="372" alt="Фотография, загруженная для обработки"></a>
+                    <a href=""><img  class="demo__img" src="img/photo-road-mobile@1x.jpg" width="280" height="372" alt="Фотография, загруженная для обработки"></a>
 
                     <div class="demo__photo">
                         <input class="visually-hidden" type="file" id="download" name="download">
@@ -144,7 +159,7 @@
                         <input type="range" id="saturation" name="saturation">
                         <label for="saturation"></label>
                     </div>
-                    <button class="demo__button--active" type="submit">Запостить</button>
+                    <button class="demo__button demo__button--active" type="submit">Запостить</button>
                     <button class="demo__button" type="reset">Отмена</button>
                 </form>
             </section>

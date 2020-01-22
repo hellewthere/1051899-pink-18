@@ -116,37 +116,32 @@
                 <h2 class="visually-hidden">Отзывы пользователей</h2>
 
                 <ul class="review__wrapper slider">
-                    <li class="review__item">
+                    <li class="review__item review__item--active">
                         <blockquote class="review__text">
                             <cite class="review__name">Николай Петров</cite>
                             <p class="review__line">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                         </blockquote>
                     </li>
-                    <li class="review__item">
+                    <li class="review__item review__item--hidden">
                         <blockquote class="review__text">
                             <cite class="review__name">Ar$eN</cite>
                             <p class="review__line">«Отличная платформа для обмена эмоциями!»</p>
                         </blockquote>
                     </li>
-                    <li class="review__item">
+                    <li class="review__item review__item--hidden">
                         <blockquote class="review__text">
                             <cite class="review__name">Оля Репина</cite>
                             <p class="review__line">«Наконец нашла место, где могу поделиться своими снимками. Рекомендую!»</p>
                         </blockquote>
                     </li>
                 </ul>
-
                 <!-- Radio -->
-                <div class="slider-button">
-                    <button type="radio" class="slider-button__point--active" name="slides" id="point1" checked>
-
-                        <button type="radio" class="slider-button__point" name="slides" id="point2">
-
-                            <button type="radio" class="slider-button__point" name="slides" id="point3">
-
+                <div class="review__slider-buttons">
+                    <button type="radio" class="review__slider-buttons__point review__slider-buttons__point--active" name="slides" id="point1">
+                    <button type="radio" class="review__slider-buttons__point" name="slides" id="point2">
+                    <button type="radio" class="review__slider-buttons__point" name="slides" id="point3">
                 </div>
             </section>
-
             <section class="tariff">
                 <h2 class="visually-hidden">Тарифы и стоимость приложения</h2>
                 <div class="tariff__slider">
@@ -171,77 +166,73 @@
                             </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody class="tariff__table-body">
                             <tr>
-                                <td class="tariff__option">Розовый фильтр</td>
-                                <div>
-                                    <span>
-                            <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
+                                <td class="tariff__option">Розовый фильтр
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                      </span>
+                                </td>
+                                <td class="tariff__option">Смайлики
+                                    <span class="tariff__minus">
+                                        <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
                                     </span>
-                                </div>
                                 </td>
-                                <td class="tariff__option">Розовый фильтр</td>
-                                <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
+                                <td class="tariff__option">Комментарии
+                                    <span class="tariff__minus">
+                                        <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
+                                    </span>
                                 </td>
-                                <td class="tariff__option">Розовый фильтр</td>
-                                <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
-                                </td>
+                                
                             </tr>
                             <tr>
-                                <td class="tariff__option">Смайлики</td>
-                                <span class="tariff__minus">
-                              <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
-                            </span>
+                                <td class="tariff__option">Розовый фильтр
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                    </span>
                                 </td>
-                                <td class="tariff__option">Смайлики</td>
-                                <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
+                                <td class="tariff__option">Смайлики
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                    </span>
                                 </td>
-                                <td class="tariff__option">Смайлики</td>
-                                <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
+                                
+                                <td class="tariff__option">Комментарии
+                                    <span class="tariff__minus">
+                                        <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
+                                    </span>
                                 </td>
+                               
+                                
                             </tr>
                             <tr>
-                                <td class="tariff__option">Комментарии</td>
-                                <span class="tariff__minus">
-                              <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
-                            </span>
+                                <td class="tariff__option">Розовый фильтр
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                    </span>
                                 </td>
-                                <td class="tariff__option">Комментарии</td>
-                                <span class="tariff__minus">
-                              <img class="tariff__option-flag" src="img/icon-no.svg" alt="Нет">
-                            </span>
+                                <td class="tariff__option">Смайлики
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                    </span>
                                 </td>
-                                <td class="tariff__option">Комментарии</td>
-                                <span class="tariff__plus">
-                              <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
-                            </span>
+                              
+                                <td class="tariff__option">Комментарии
+                                    <span class="tariff__plus">
+                                        <img class="tariff__option-flag" src="img/icon-yes.svg" alt="Есть">
+                                    </span>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
                     <!-- Radio -->
-                    <div class="radio-slider">
-                        <input type="radio" class="radio-slider__point" name="slides" id="point1" checked>
-                        <label for="point1"></label>
-                        <input type="radio" class="radio-slider__point" name="slides" id="point2">
-                        <label for="point2"></label>
-                        <input type="radio" class="radio-slider__point" name="slides" id="point3">
-                        <label for="point3"></label>
-                    </div>
+                <div class="tariff__slider-buttons">
+                    <button type="radio" class="tariff__slider-buttons__point" name="slides" id="point1">
+                    <button type="radio" class="tariff__slider-buttons__point tariff__slider-buttons__point--active" name="slides" id="point2">
+                    <button type="radio" class="tariff__slider-buttons__point" name="slides" id="point3">
+                </div>
                 </div>
             </section>
-
             <section class="contacts">
                 <h2 class="visually-hidden">Контакты поддержки пользователей приложения «Пинк»</h2>
                 <p class="contacts__header">Остались вопросы?</p>
@@ -263,7 +254,7 @@
             </section>
             <section class="map">
                 <h2 class="visually-hidden">Географическое положение проекта Pink на карте</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574281618261!5m2!1sru!2sru" style="border:0" allowfullscreen="" width="320" height="645"></iframe>
+                <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574281618261!5m2!1sru!2sru" style="border:0" allowfullscreen="" width="320" height="645"></iframe>
             </section>
         </div>
     </main>

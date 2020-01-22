@@ -2,8 +2,6 @@
 	background-color: @white;
 }
 
-.photos__header {}
-
 .photos__title {
 	background-image: url(/img/bg-back-mobile@1x.jpg);
 	color: @white;
@@ -16,6 +14,8 @@
 	padding-left: 48px;
 	padding-bottom: 80px;
 }
+
+.photos__header {}
 
 .photos__paragraph {
 	padding-top: 45px;
@@ -30,12 +30,13 @@
 }
 
 .photos__list {
-  .list-reset();
+  .list;
 }
 
 .photos__list slider {}
 
 .photos__item {
+	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
 	background-color: @lightgrey;
@@ -67,8 +68,48 @@
 }
 
 .photos__text {
-	padding: 21px 31px 20px 17px;
-	text-align: left;
+  padding: 21px 31px 20px 17px;
+}
+
+.photos__text-time {
+	font-style: normal;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 1.71;
+  text-align: left;
+}
+
+.photos__text-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.photos__comment {
+	font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  text-align: left;
+
+}
+
+.photos__likes {
+	margin-left: 20px;
+	display: flex;
+    padding-top: 11px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.photos__like {
+	display: inline-block;
+    vertical-align: middle;
 }
 
 .photos__element {
@@ -77,6 +118,8 @@
 	text-align: left;
 	color: @red;
 	text-transform: uppercase;
+	display: inline-block;
+    vertical-align: middle;
 }
 
 .photos__bottom-text {
